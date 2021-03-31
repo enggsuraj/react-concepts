@@ -3,6 +3,6 @@
   color: var(--bg-headline);
 }
 
-p {
+.state p {
   margin: 20px;
 }
