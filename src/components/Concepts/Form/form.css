@@ -13,10 +13,11 @@ form input {
 }
 
 @media only screen and (max-width: 540px) {
-  form {
-    margin: 20px;
-  }
   form input {
-    width: 100%;
+    width: auto;
+  }
+
+  form {
+    margin-bottom: 20px;
   }
 }
