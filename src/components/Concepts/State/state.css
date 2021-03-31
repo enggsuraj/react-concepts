@@ -1,0 +1,8 @@
+.state {
+  text-align: center;
+  color: var(--bg-headline);
+}
+
+p {
+  margin: 20px;
+}

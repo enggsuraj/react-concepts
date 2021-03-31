@@ -1,0 +1,11 @@
+.listAndKey {
+  display: flex;
+  justify-content: center;
+}
+
+.listAndKey li {
+  text-decoration: none;
+  list-style: none;
+  color: var(--bg-headline);
+  margin: 20px;
+}

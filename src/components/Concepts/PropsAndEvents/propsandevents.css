@@ -1,0 +1,13 @@
+.props_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.props_box p {
+  color: var(--bg-headline);
+}
+
+.props_box button {
+  background-color: var(--bg-button);
+}
