@@ -1,3 +1,11 @@
+# react-concepts
+
+[![React Badge](http://img.shields.io/badge/Powered%20By-React-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
+
+[![Website Badge](https://img.shields.io/badge/Visit-Now-green?style=for-the-badge&logo=vercel)](https://reactconcepts.blogtheorem.com/).
+
+![react-concepts](https://user-images.githubusercontent.com/6918020/113139449-beb69400-9244-11eb-8431-285ce3212526.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
