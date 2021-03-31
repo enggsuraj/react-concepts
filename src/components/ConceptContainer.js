@@ -1,67 +1,68 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function ConceptContainer() {
   return (
     <div className="item_container">
       <div className="item">
-        <a href="/1">
+        <Link to="/1">
           <p>Class Component</p>
-        </a>
+        </Link>
       </div>
       <div className="item">
-        <a href="/2">
+        <Link to="/2">
           <p>this.state</p>
-        </a>
+        </Link>
       </div>
       <div className="item">
-        <a href="/3">
+        <Link to="/3">
           <p>Props & Events</p>
-        </a>
+        </Link>
       </div>
       <div className="disabled">
-        <a href="/4">
+        <Link to="/4">
           <p>LifeCycle Methods</p>
-        </a>
+        </Link>
       </div>
       <div className="item">
-        <a href="/5">
+        <Link to="/5">
           <p>Functional Comp</p>
-        </a>
+        </Link>
       </div>
       <div className="item">
-        <a href="/6">
+        <Link to="/6">
           <p>useState</p>
-        </a>
+        </Link>
       </div>
       <div className="disabled">
-        <a href="/7">
+        <Link to="/7">
           <p>Props & Events in FC</p>
-        </a>
+        </Link>
       </div>
       <div className="item">
-        <a href="/8">
+        <Link to="/8">
           <p>Form</p>
-        </a>
+        </Link>
       </div>
       <div className="item">
-        <a href="/9">
+        <Link to="/9">
           <p>Conditional Rendering</p>
-        </a>
+        </Link>
       </div>
       <div className="item">
-        <a href="/10">
+        <Link to="/10">
           <p>List & Keys</p>
-        </a>
+        </Link>
       </div>
       <div className="item">
-        <a href="/11">
+        <Link to="/11">
           <p>useEffect</p>
-        </a>
+        </Link>
       </div>
       <div className="item">
-        <a href="/12">
+        <Link to="/12">
           <p>useRefs</p>
-        </a>
+        </Link>
       </div>
       <div className="disabled">
         <p>useMemo</p>

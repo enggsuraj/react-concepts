@@ -8,7 +8,6 @@ import State from "./components/Concepts/State/State";
 import PropsAndEvents from "./components/Concepts/PropsAndEvents/PropsAndEvents";
 import FunctionalComponent from "./components/Concepts/FunctionalComponent/FunctionalComponent";
 import UseState from "./components/Concepts/UseState/UseState";
-import PropsAndEventsFC from "./components/Concepts/PropsAndEventsFC/PropsAndEventsFC";
 import Form from "./components/Concepts/Form/Form";
 import ConditionalRendering from "./components/Concepts/ConditionalRendering/ConditionalRendering";
 import ListAndkeys from "./components/Concepts/ListAndkeys/ListAndkeys";
