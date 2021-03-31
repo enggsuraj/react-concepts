@@ -2,6 +2,7 @@ import React from "react";
 import "./listandkeys.css";
 
 import Img from "../../../assets/listandkey.png";
+import { Link } from "react-router-dom";
 
 function ListAndkeys() {
   const numbers = [1, 2, 3, 4, 5];
@@ -15,10 +16,16 @@ function ListAndkeys() {
         ))}
       </div>
 
-      <div className="btn">
-        <a href="/">
+      <div>
+        <Link to="/9">
+          <button>Previous</button>
+        </Link>
+        <Link to="/">
           <button>Home</button>
-        </a>
+        </Link>
+        <Link to="/11">
+          <button>Next</button>
+        </Link>
       </div>
     </div>
   );

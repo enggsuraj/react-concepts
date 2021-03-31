@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import Img from "../../../assets/useref.png";
 
 function UseRefs() {
@@ -23,10 +24,16 @@ function UseRefs() {
         <span ref={ref}>{state}</span>
       </div>{" "}
       <button onClick={handleClick}>State</button>
-      <div className="btn">
-        <a href="/">
+      <div>
+        <Link to="/11">
+          <button>Previous</button>
+        </Link>
+        <Link to="/">
           <button>Home</button>
-        </a>
+        </Link>
+        <Link to="/13">
+          <button>Next</button>
+        </Link>
       </div>
     </div>
   );

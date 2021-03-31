@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Img from "../../../assets/conditionalrendering.png";
 
 function ConditionalRendering() {
@@ -14,10 +15,16 @@ function ConditionalRendering() {
       <div>{isToggle ? <h2>😃</h2> : <h2>😄</h2>}</div>
       <button onClick={handleClick}>Toggle</button>
 
-      <div className="btn">
-        <a href="/">
+      <div>
+        <Link to="/8">
+          <button>Previous</button>
+        </Link>
+        <Link to="/">
           <button>Home</button>
-        </a>
+        </Link>
+        <Link to="/10">
+          <button>Next</button>
+        </Link>
       </div>
     </div>
   );

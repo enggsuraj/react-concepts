@@ -10,7 +10,7 @@ function Main() {
     <div className="main">
       <div className="container">
         <Heading
-          title="React Concepts in one frame"
+          title="🔯React Concepts in one project 🔯 "
           para="Basic concepts in each tiles with other react projects in another tiles."
         />
         <ConceptContainer />

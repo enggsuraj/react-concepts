@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./useeffect.css";
 
 import Img from "../../../assets/useeffect.png";
+import { Link } from "react-router-dom";
 
 function UseEffect() {
   const [state, setState] = useState([]);
@@ -29,10 +30,16 @@ function UseEffect() {
         ))}
       </div>
 
-      <div className="btn">
-        <a href="/">
+      <div>
+        <Link to="/10">
+          <button>Previous</button>
+        </Link>
+        <Link to="/">
           <button>Home</button>
-        </a>
+        </Link>
+        <Link to="/12">
+          <button>Next</button>
+        </Link>
       </div>
     </div>
   );

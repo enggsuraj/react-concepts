@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./form.css";
 
 function Form() {
@@ -46,9 +47,17 @@ function Form() {
         <br />
         <button onClick={handleSubmit}>Submit</button>
       </form>
-      <a href="/">
-        <button>Home</button>
-      </a>
+      <div>
+        <Link to="7">
+          <button>Previous</button>
+        </Link>
+        <Link to="/">
+          <button>Home</button>
+        </Link>
+        <Link to="/9">
+          <button>Next</button>
+        </Link>
+      </div>
     </div>
   );
 }

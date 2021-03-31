@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import stateImg from "../../../assets/state.png";
 
 import "./state.css";
@@ -20,10 +21,16 @@ export default class State extends Component {
           <img src={stateImg} alt="state component"></img>
           <p>this.state.emoji = {this.state.name}</p>
         </div>
-        <div className="btn">
-          <a href="/">
+        <div>
+          <Link to="/1">
+            <button>Previous</button>
+          </Link>
+          <Link to="/">
             <button>Home</button>
-          </a>
+          </Link>
+          <Link to="/3">
+            <button>Next</button>
+          </Link>
         </div>
       </div>
     );

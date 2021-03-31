@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import img from "../../../assets/propsandevent.png";
 
 import "./propsandevents.css";
@@ -32,10 +33,16 @@ export default class PropsAndEvents extends Component {
             </button>
           </div>
         </div>
-        <div className="btn">
-          <a href="/">
+        <div>
+          <Link to="/2">
+            <button>Previous</button>
+          </Link>
+          <Link to="/">
             <button>Home</button>
-          </a>
+          </Link>
+          <Link to="/3">
+            <button>Next</button>
+          </Link>
         </div>
       </div>
     );
