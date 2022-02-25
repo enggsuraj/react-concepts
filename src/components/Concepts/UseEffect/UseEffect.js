@@ -20,7 +20,7 @@ function UseEffect() {
 
   return (
     <div>
-      <img src={Img} alt="state component"></img>
+      <img className="component_image" src={Img} alt="state component"></img>
       <div className="data">
         {state.map((each) => (
           <div className="data_each">

@@ -7,5 +7,5 @@
 .data_each {
   background-color: var(--bg-headline);
   margin: 10px;
-  border-radius: 10px;
+  padding: 10px;
 }

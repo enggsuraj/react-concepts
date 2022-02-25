@@ -9,7 +9,7 @@ function ListAndkeys() {
 
   return (
     <div>
-      <img src={Img} alt="state component"></img>
+      <img className="component_image" src={Img} alt="state component"></img>
       <div className="listAndKey">
         {numbers.map((number) => (
           <li key={number.toString()}>{number}</li>

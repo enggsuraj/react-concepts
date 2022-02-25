@@ -18,7 +18,11 @@ export default class PropsAndEvents extends Component {
     return (
       <div>
         <div>
-          <img src={img} alt="props and events"></img>
+          <img
+            className="component_image"
+            src={img}
+            alt="props and events"
+          ></img>
           <div className="props_box">
             <button
               onClick={() => this.setState({ count: this.state.count + 1 })}
@@ -40,7 +44,7 @@ export default class PropsAndEvents extends Component {
           <Link to="/">
             <button>Home</button>
           </Link>
-          <Link to="/3">
+          <Link to="/4">
             <button>Next</button>
           </Link>
         </div>

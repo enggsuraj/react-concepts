@@ -19,7 +19,7 @@ function UseRefs() {
 
   return (
     <div>
-      <img src={Img} alt="state component"></img>
+      <img className="component_image" src={Img} alt="state component"></img>
       <div>
         <span ref={ref}>{state}</span>
       </div>{" "}

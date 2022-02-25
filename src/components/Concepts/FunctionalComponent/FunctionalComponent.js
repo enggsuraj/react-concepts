@@ -7,7 +7,7 @@ import "./functionalcomponent.css";
 function FunctionalComponent() {
   return (
     <div>
-      <img src={Img} alt="state component"></img>
+      <img className="component_image" src={Img} alt="state component"></img>
       <div>
         <Link to="/4">
           <button>Previous</button>

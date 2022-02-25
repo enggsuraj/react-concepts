@@ -19,7 +19,7 @@ function ConceptContainer() {
           <p>Props & Events</p>
         </Link>
       </div>
-      <div className="disabled">
+      <div className="item">
         <Link to="/4">
           <p>LifeCycle Methods</p>
         </Link>
@@ -34,7 +34,7 @@ function ConceptContainer() {
           <p>useState</p>
         </Link>
       </div>
-      <div className="disabled">
+      <div className="item">
         <Link to="/7">
           <p>Props & Events in FC</p>
         </Link>
@@ -64,8 +64,15 @@ function ConceptContainer() {
           <p>useRefs</p>
         </Link>
       </div>
-      <div className="disabled">
-        <p>useMemo</p>
+      <div className="item">
+        <Link to="/13">
+          <p>useMemo</p>
+        </Link>
+      </div>
+      <div className="item">
+        <Link to="/14">
+          <p>useCallback</p>
+        </Link>
       </div>
       <div className="disabled">
         <p>Prop.Types</p>

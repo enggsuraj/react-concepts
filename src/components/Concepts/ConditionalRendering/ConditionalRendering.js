@@ -11,7 +11,7 @@ function ConditionalRendering() {
 
   return (
     <div>
-      <img src={Img} alt="state component"></img>
+      <img className="component_image" src={Img} alt="state component"></img>
       <div>{isToggle ? <h2>😃</h2> : <h2>😄</h2>}</div>
       <button onClick={handleClick}>Toggle</button>
 

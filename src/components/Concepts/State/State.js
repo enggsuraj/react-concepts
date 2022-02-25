@@ -18,7 +18,11 @@ export default class State extends Component {
     return (
       <div className="state">
         <div>
-          <img src={stateImg} alt="state component"></img>
+          <img
+            className="component_image"
+            src={stateImg}
+            alt="state component"
+          ></img>
           <p>this.state.emoji = {this.state.name}</p>
         </div>
         <div>

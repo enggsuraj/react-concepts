@@ -10,7 +10,7 @@ function UseState() {
 
   return (
     <div>
-      <img src={Img} alt="state component"></img>
+      <img className="component_image" src={Img} alt="state component"></img>
       <div className="props_box">
         <button onClick={() => setCount(count + 1)}>
           <h2>+</h2>

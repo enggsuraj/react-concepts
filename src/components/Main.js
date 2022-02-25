@@ -10,15 +10,15 @@ function Main() {
     <div className="main">
       <div className="container">
         <Heading
-          title="🔯 React-In-One 🔯 "
+          title="🔯 React Projects 🔯"
+          para="Demo projects using all the knowledge and lessons."
+        />
+        <ProjectContainer />
+        <Heading
+          title="React-In-One"
           para="Basic concepts in each tiles with other react projects in another tiles."
         />
         <ConceptContainer />
-        <Heading
-          title="React Projects"
-          para="Some demo projects using all the knowledge and lessons."
-        />
-        <ProjectContainer />
         <Footer />
       </div>
     </div>

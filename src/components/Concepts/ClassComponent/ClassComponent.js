@@ -11,7 +11,7 @@ export default class ClassComponent extends Component {
   render() {
     return (
       <div className="classcomponent">
-        <img src={cc} alt="class component"></img>
+        <img className="component_image" src={cc} alt="class component"></img>
         <div>
           <Link to="/">
             <button>Home</button>
