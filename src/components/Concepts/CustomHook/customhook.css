@@ -1,0 +1,15 @@
+.customhook {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.customhook input:first-child {
+  padding: 10px;
+}
+
+.customhook input {
+  margin: 10px;
+}

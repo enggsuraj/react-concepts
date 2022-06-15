@@ -1,0 +1,13 @@
+.container {
+  color: white;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

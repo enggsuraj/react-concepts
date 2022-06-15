@@ -121,11 +121,14 @@ footer p {
 }
 
 .middle {
-  text-align: center;
+  /* text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: center; */
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  color: white;
 }
 
 /* BUTTON */
@@ -136,10 +139,15 @@ button {
   color: var(--bg-dark);
   background-color: var(--bg);
   margin: 10px;
+  box-shadow: 5px 5px 2px black;
 }
 
 button:focus {
   outline: none;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 button:active {
@@ -151,6 +159,22 @@ button:active {
   border-radius: 10px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.801);
   margin: 20px;
+}
+
+.codesyntax {
+  text-align: left;
+  box-shadow: 5px 5px 2px black;
+  padding: 30px !important;
+  margin: 20px 0 40px 0;
+  border-radius: 10px;
+}
+
+.navigation {
+  margin-bottom: 20px;
+}
+
+.wrapper p {
+  color: white;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -172,5 +196,14 @@ button:active {
 
   .component_image {
     width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .middle {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
   }
 }

@@ -1,6 +1,32 @@
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import Img from "../../../assets/useref.png";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { tomorrowNightEighties } from "react-syntax-highlighter/dist/esm/styles/hljs";
+
+const codeString = `function UseRefs() {
+  const [state, setstate] = useState("😄");
+
+  const ref = useRef(null);
+
+  const handleClick = (param) => {
+    if (state === "😄") {
+      setstate("😣");
+      ref.current.style.backgroundColor = "red";
+    } else {
+      setstate("😄");
+      ref.current.style.backgroundColor = "";
+    }
+  };
+
+  return (
+    <div>
+      <div>
+        <h2 ref={ref}>{state}</h2>
+      </div>{" "}
+      <button onClick={handleClick}>State</button>
+    </div>
+  );
+}`;
 
 function UseRefs() {
   const [state, setstate] = useState("😄");
@@ -19,12 +45,19 @@ function UseRefs() {
 
   return (
     <div>
-      <img className="component_image" src={Img} alt="state component"></img>
+      <h2>UseRefs</h2>
       <div>
-        <span ref={ref}>{state}</span>
+        <h2 ref={ref}>{state}</h2>
       </div>{" "}
       <button onClick={handleClick}>State</button>
-      <div>
+      <SyntaxHighlighter
+        class="codesyntax"
+        language="javascript"
+        style={tomorrowNightEighties}
+      >
+        {codeString}
+      </SyntaxHighlighter>{" "}
+      <div className="navigation">
         <Link to="/11">
           <button>Previous</button>
         </Link>

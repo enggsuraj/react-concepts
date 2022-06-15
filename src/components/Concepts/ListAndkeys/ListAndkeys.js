@@ -1,22 +1,44 @@
 import React from "react";
 import "./listandkeys.css";
 
-import Img from "../../../assets/listandkey.png";
 import { Link } from "react-router-dom";
+
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { tomorrowNightEighties } from "react-syntax-highlighter/dist/esm/styles/hljs";
+
+const codeString = `function ListAndkeys() {
+    const numbers = [1, 2, 3, 4, 5];
+  
+    return (
+      <div>
+        <div className="listAndKey">
+          {numbers.map((number) => (
+            <li key={number.toString()}>{number}</li>
+          ))}
+        </div>
+      </div>
+    );
+  }`;
 
 function ListAndkeys() {
   const numbers = [1, 2, 3, 4, 5];
 
   return (
     <div>
-      <img className="component_image" src={Img} alt="state component"></img>
+      <h2>List & Keys</h2>
       <div className="listAndKey">
         {numbers.map((number) => (
           <li key={number.toString()}>{number}</li>
         ))}
       </div>
-
-      <div>
+      <SyntaxHighlighter
+        class="codesyntax"
+        language="javascript"
+        style={tomorrowNightEighties}
+      >
+        {codeString}
+      </SyntaxHighlighter>{" "}
+      <div className="navigation">
         <Link to="/9">
           <button>Previous</button>
         </Link>

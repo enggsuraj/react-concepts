@@ -4,6 +4,43 @@ import img from "../../../assets/propsandevent.png";
 
 import "./propsandevents.css";
 
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { tomorrowNightEighties } from "react-syntax-highlighter/dist/esm/styles/hljs";
+
+const codeString = `
+export default class PropsAndEvents extends Component {
+    constructor(props) {
+      super(props);
+  
+      // MAIN STATE
+      this.state = {
+        count: 0,
+      };
+    }
+  
+    render() {
+      return (
+        <div>
+          <div>
+            <div className="props_box">
+              <button
+                onClick={() => this.setState({ count: this.state.count + 1 })}
+              >
+                <h2>+</h2>
+              </button>
+              <p>count = {this.state.count}</p>
+              <button
+                onClick={() => this.setState({ count: this.state.count - 1 })}
+              >
+                <h2>-</h2>
+              </button>
+            </div>
+          </div>
+        </div>
+      );
+    }
+  }`;
+
 export default class PropsAndEvents extends Component {
   constructor(props) {
     super(props);
@@ -18,35 +55,40 @@ export default class PropsAndEvents extends Component {
     return (
       <div>
         <div>
-          <img
-            className="component_image"
-            src={img}
-            alt="props and events"
-          ></img>
+          <h2>Props & Events</h2>
           <div className="props_box">
             <button
               onClick={() => this.setState({ count: this.state.count + 1 })}
             >
-              <h2>+</h2>
+              +
             </button>
+            &nbsp;&nbsp; &nbsp;&nbsp;
             <p>count = {this.state.count}</p>
+            &nbsp;&nbsp; &nbsp;&nbsp;
             <button
               onClick={() => this.setState({ count: this.state.count - 1 })}
             >
-              <h2>-</h2>
+              -
             </button>
           </div>
-        </div>
-        <div>
-          <Link to="/2">
-            <button>Previous</button>
-          </Link>
-          <Link to="/">
-            <button>Home</button>
-          </Link>
-          <Link to="/4">
-            <button>Next</button>
-          </Link>
+          <SyntaxHighlighter
+            class="codesyntax"
+            language="javascript"
+            style={tomorrowNightEighties}
+          >
+            {codeString}
+          </SyntaxHighlighter>{" "}
+          <div className="navigation">
+            <Link to="/2">
+              <button>Previous</button>
+            </Link>
+            <Link to="/">
+              <button>Home</button>
+            </Link>
+            <Link to="/4">
+              <button>Next</button>
+            </Link>
+          </div>
         </div>
       </div>
     );

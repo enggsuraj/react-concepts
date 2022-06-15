@@ -1,10 +1,12 @@
-form {
+.form {
   padding: 30px;
   background-color: var(--bg-buttonTest);
   border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 5px 5px 2px black;
 }
 
-form input {
+.form input {
   padding: 10px;
   width: 340px;
   background-color: rgb(231, 231, 231);
@@ -13,11 +15,11 @@ form input {
 }
 
 @media only screen and (max-width: 540px) {
-  form input {
+  .form input {
     width: auto;
   }
 
-  form {
+  .form {
     margin-bottom: 20px;
   }
 }

@@ -2,6 +2,52 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./form.css";
 
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { tomorrowNightEighties } from "react-syntax-highlighter/dist/esm/styles/hljs";
+
+const codeString = `function Form() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (name.trim().length !== 0 && email.trim().length !== 0) {
+      console.log({ name: name, email: email });
+      let obj = { name: name, email: email };
+      alert(JSON.stringify(obj));
+
+      setName("");
+      setEmail("");
+    } else {
+      alert("No blank data allowed");
+    }
+  };
+  
+  return (
+    <div>
+      <form>
+        <input
+          value={name}
+          placeholder="Name"
+          type="text"
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
+        />
+        <input
+          value={email}
+          placeholder="Email"
+          type="email"
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
+        />
+        <button onClick={handleSubmit}>Submit</button>
+      </form>
+    </div>
+  );
+}`;
+
 function Form() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -19,9 +65,10 @@ function Form() {
       alert("No blank data allowed");
     }
   };
+
   return (
-    <div>
-      {/* <img src={Img} alt="state component"></img> */}
+    <div className="form">
+      <h2>React Form</h2>
       <form>
         <input
           value={name}
@@ -47,7 +94,14 @@ function Form() {
         <br />
         <button onClick={handleSubmit}>Submit</button>
       </form>
-      <div>
+      <SyntaxHighlighter
+        class="codesyntax"
+        language="javascript"
+        style={tomorrowNightEighties}
+      >
+        {codeString}
+      </SyntaxHighlighter>{" "}
+      <div className="navigation">
         <Link to="7">
           <button>Previous</button>
         </Link>

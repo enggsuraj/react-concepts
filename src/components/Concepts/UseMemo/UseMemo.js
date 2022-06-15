@@ -36,8 +36,14 @@ function UseMemo() {
 
   return (
     <div>
-      <p style={{ color: "white" }}>UseMemo - Optimize computed value</p>
+      <h2 style={{ color: "white" }}>UseMemo - Optimize computed value</h2>
       {/* <img src={Img} alt="state component"></img> */}
+
+      <div>
+        <span>{isEven ? "Even" : "Odd"}</span>
+        <button onClick={incrementOne}>IncrementOne : {counterOne}</button>
+        <button onClick={incrementTwo}>IncrementTwo : {counterTwo}</button>
+      </div>
       <SyntaxHighlighter
         class="codesyntax"
         language="javascript"
@@ -45,11 +51,6 @@ function UseMemo() {
       >
         {codeString}
       </SyntaxHighlighter>
-      <div>
-        <span>{isEven ? "Even" : "Odd"}</span>
-        <button onClick={incrementOne}>IncrementOne : {counterOne}</button>
-        <button onClick={incrementTwo}>IncrementTwo : {counterTwo}</button>
-      </div>
       <div>
         <Link to="/10">
           <button>Previous</button>
