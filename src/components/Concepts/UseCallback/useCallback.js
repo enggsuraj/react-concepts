@@ -83,13 +83,6 @@ function UseCallback() {
         Count: {count}
         <button onClick={increment}>+</button>
       </div>
-      <SyntaxHighlighter
-        class="codesyntax"
-        language="javascript"
-        style={tomorrowNightEighties}
-      >
-        {codeString}
-      </SyntaxHighlighter>
       <div className="navigation">
         <Link to="/usereducer">
           <button>Previous</button>
@@ -101,6 +94,13 @@ function UseCallback() {
           <button>Next</button>
         </Link>
       </div>
+      <SyntaxHighlighter
+        class="codesyntax"
+        language="javascript"
+        style={tomorrowNightEighties}
+      >
+        {codeString}
+      </SyntaxHighlighter>
     </div>
   );
 }

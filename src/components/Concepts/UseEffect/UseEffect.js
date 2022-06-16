@@ -62,14 +62,6 @@ function UseEffect() {
         ))}
       </div>
 
-      <SyntaxHighlighter
-        class="codesyntax"
-        language="javascript"
-        style={tomorrowNightEighties}
-      >
-        {codeString}
-      </SyntaxHighlighter>
-
       <div class="navigation">
         <Link to="/listandkeys">
           <button>Previous</button>
@@ -81,6 +73,14 @@ function UseEffect() {
           <button>Next</button>
         </Link>
       </div>
+
+      <SyntaxHighlighter
+        class="codesyntax"
+        language="javascript"
+        style={tomorrowNightEighties}
+      >
+        {codeString}
+      </SyntaxHighlighter>
     </div>
   );
 }

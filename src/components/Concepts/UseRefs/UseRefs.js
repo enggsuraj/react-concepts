@@ -50,13 +50,6 @@ function UseRefs() {
         <h2 ref={ref}>{state}</h2>
       </div>{" "}
       <button onClick={handleClick}>State</button>
-      <SyntaxHighlighter
-        class="codesyntax"
-        language="javascript"
-        style={tomorrowNightEighties}
-      >
-        {codeString}
-      </SyntaxHighlighter>{" "}
       <div className="navigation">
         <Link to="/useeffect">
           <button>Previous</button>
@@ -68,6 +61,13 @@ function UseRefs() {
           <button>Next</button>
         </Link>
       </div>
+      <SyntaxHighlighter
+        class="codesyntax"
+        language="javascript"
+        style={tomorrowNightEighties}
+      >
+        {codeString}
+      </SyntaxHighlighter>{" "}
     </div>
   );
 }

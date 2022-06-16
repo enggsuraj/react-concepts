@@ -20,13 +20,6 @@ function FunctionalComponent() {
     <div className="wrapper">
       <h2>Functional Component</h2>
       <p>Hello, Sara</p>
-      <SyntaxHighlighter
-        class="codesyntax"
-        language="javascript"
-        style={tomorrowNightEighties}
-      >
-        {codeString}
-      </SyntaxHighlighter>{" "}
       <div>
         <Link to="/propsandevents">
           <button>Previous</button>
@@ -38,6 +31,13 @@ function FunctionalComponent() {
           <button>Next</button>
         </Link>
       </div>
+      <SyntaxHighlighter
+        class="codesyntax"
+        language="javascript"
+        style={tomorrowNightEighties}
+      >
+        {codeString}
+      </SyntaxHighlighter>{" "}
     </div>
   );
 }

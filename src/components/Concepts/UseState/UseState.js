@@ -49,13 +49,6 @@ function UseState() {
         &nbsp; &nbsp;
         <button onClick={() => setCount(count - 1)}>-</button>
       </div>
-      <SyntaxHighlighter
-        class="codesyntax"
-        language="javascript"
-        style={tomorrowNightEighties}
-      >
-        {codeString}
-      </SyntaxHighlighter>{" "}
       <div className="navigation">
         <Link to="/functionalcomponents">
           <button>Previous</button>
@@ -67,6 +60,13 @@ function UseState() {
           <button>Next</button>
         </Link>
       </div>
+      <SyntaxHighlighter
+        class="codesyntax"
+        language="javascript"
+        style={tomorrowNightEighties}
+      >
+        {codeString}
+      </SyntaxHighlighter>{" "}
     </div>
   );
 }

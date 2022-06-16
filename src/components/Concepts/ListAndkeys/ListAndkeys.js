@@ -31,13 +31,6 @@ function ListAndkeys() {
           <li key={number.toString()}>{number}</li>
         ))}
       </div>
-      <SyntaxHighlighter
-        class="codesyntax"
-        language="javascript"
-        style={tomorrowNightEighties}
-      >
-        {codeString}
-      </SyntaxHighlighter>{" "}
       <div className="navigation">
         <Link to="/conditionalrendering">
           <button>Previous</button>
@@ -49,6 +42,13 @@ function ListAndkeys() {
           <button>Next</button>
         </Link>
       </div>
+      <SyntaxHighlighter
+        class="codesyntax"
+        language="javascript"
+        style={tomorrowNightEighties}
+      >
+        {codeString}
+      </SyntaxHighlighter>{" "}
     </div>
   );
 }

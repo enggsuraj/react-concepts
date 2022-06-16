@@ -96,13 +96,6 @@ function CustomHook() {
         />
         <button>ADD</button>
       </form>
-      <SyntaxHighlighter
-        class="codesyntax"
-        language="javascript"
-        style={tomorrowNightEighties}
-      >
-        {codeString}
-      </SyntaxHighlighter>{" "}
       <div className="navigation">
         <Link to="/usecallback">
           <button>Previous</button>
@@ -114,6 +107,13 @@ function CustomHook() {
           <button>Next</button>
         </Link>
       </div>
+      <SyntaxHighlighter
+        class="codesyntax"
+        language="javascript"
+        style={tomorrowNightEighties}
+      >
+        {codeString}
+      </SyntaxHighlighter>{" "}
     </>
   );
 }

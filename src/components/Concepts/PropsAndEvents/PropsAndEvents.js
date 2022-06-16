@@ -71,13 +71,6 @@ export default class PropsAndEvents extends Component {
               -
             </button>
           </div>
-          <SyntaxHighlighter
-            class="codesyntax"
-            language="javascript"
-            style={tomorrowNightEighties}
-          >
-            {codeString}
-          </SyntaxHighlighter>{" "}
           <div className="navigation">
             <Link to="/thisstate">
               <button>Previous</button>
@@ -89,6 +82,13 @@ export default class PropsAndEvents extends Component {
               <button>Next</button>
             </Link>
           </div>
+          <SyntaxHighlighter
+            class="codesyntax"
+            language="javascript"
+            style={tomorrowNightEighties}
+          >
+            {codeString}
+          </SyntaxHighlighter>{" "}
         </div>
       </div>
     );

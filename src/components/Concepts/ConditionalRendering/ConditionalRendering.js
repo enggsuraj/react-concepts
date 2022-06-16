@@ -30,13 +30,6 @@ function ConditionalRendering() {
       <h2>Conditional Rendering</h2>
       <div>{isToggle ? <h2>😃</h2> : <h2>😡</h2>}</div>
       <button onClick={handleClick}>Mood</button>
-      <SyntaxHighlighter
-        class="codesyntax"
-        language="javascript"
-        style={tomorrowNightEighties}
-      >
-        {codeString}
-      </SyntaxHighlighter>{" "}
       <div className="navigation">
         <Link to="/form">
           <button>Previous</button>
@@ -48,6 +41,13 @@ function ConditionalRendering() {
           <button>Next</button>
         </Link>
       </div>
+      <SyntaxHighlighter
+        class="codesyntax"
+        language="javascript"
+        style={tomorrowNightEighties}
+      >
+        {codeString}
+      </SyntaxHighlighter>{" "}
     </div>
   );
 }

@@ -30,7 +30,7 @@ function UseMemo() {
 
   const isEven = useMemo(() => {
     let i = 0;
-    while (i < 2000000000) i++;
+    while (i < 20000) i++;
     return counterOne % 2 === 0;
   }, [counterOne]);
 
@@ -44,13 +44,6 @@ function UseMemo() {
         <button onClick={incrementOne}>IncrementOne : {counterOne}</button>
         <button onClick={incrementTwo}>IncrementTwo : {counterTwo}</button>
       </div>
-      <SyntaxHighlighter
-        class="codesyntax"
-        language="javascript"
-        style={tomorrowNightEighties}
-      >
-        {codeString}
-      </SyntaxHighlighter>
       <div>
         <Link to="/userefs">
           <button>Previous</button>
@@ -62,6 +55,13 @@ function UseMemo() {
           <button>Next</button>
         </Link>
       </div>
+      <SyntaxHighlighter
+        class="codesyntax"
+        language="javascript"
+        style={tomorrowNightEighties}
+      >
+        {codeString}
+      </SyntaxHighlighter>
     </div>
   );
 }

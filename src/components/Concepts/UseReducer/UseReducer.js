@@ -79,14 +79,6 @@ function UseReducer() {
         </button>
       </div>
 
-      <SyntaxHighlighter
-        class="codesyntax"
-        language="javascript"
-        style={tomorrowNightEighties}
-      >
-        {codeString}
-      </SyntaxHighlighter>
-
       <div>
         <Link to="/usememo">
           <button>Previous</button>
@@ -98,6 +90,15 @@ function UseReducer() {
           <button>Next</button>
         </Link>
       </div>
+
+      <SyntaxHighlighter
+        class="codesyntax"
+        language="javascript"
+        style={tomorrowNightEighties}
+      >
+        {codeString}
+      </SyntaxHighlighter>
+
       <br />
     </div>
   );
