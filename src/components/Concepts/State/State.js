@@ -45,13 +45,13 @@ export default class State extends Component {
           <p>this.state.emoji = {this.state.name}</p>
         </div>
         <div>
-          <Link to="/1">
+          <Link to="/classcomponent">
             <button>Previous</button>
           </Link>
           <Link to="/">
             <button>Home</button>
           </Link>
-          <Link to="/3">
+          <Link to="/propsandevents">
             <button>Next</button>
           </Link>
         </div>

@@ -76,10 +76,13 @@ function RouterExample() {
         {codeString}
       </SyntaxHighlighter>{" "}
       <div className="navigation">
+        <Link to="/customhook">
+          <button>Previous</button>
+        </Link>
         <Link to="/">
           <button>Home</button>
         </Link>
-        <Link to="/2">
+        <Link to="/portals">
           <button>Next</button>
         </Link>
       </div>

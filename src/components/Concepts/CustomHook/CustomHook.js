@@ -104,10 +104,13 @@ function CustomHook() {
         {codeString}
       </SyntaxHighlighter>{" "}
       <div className="navigation">
+        <Link to="/usecallback">
+          <button>Previous</button>
+        </Link>
         <Link to="/">
           <button>Home</button>
         </Link>
-        <Link to="/2">
+        <Link to="/router">
           <button>Next</button>
         </Link>
       </div>

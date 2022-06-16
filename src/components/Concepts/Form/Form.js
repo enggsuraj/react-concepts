@@ -102,13 +102,13 @@ function Form() {
         {codeString}
       </SyntaxHighlighter>{" "}
       <div className="navigation">
-        <Link to="7">
+        <Link to="/usestate">
           <button>Previous</button>
         </Link>
         <Link to="/">
           <button>Home</button>
         </Link>
-        <Link to="/9">
+        <Link to="/conditionalrendering">
           <button>Next</button>
         </Link>
       </div>

@@ -39,13 +39,13 @@ function ListAndkeys() {
         {codeString}
       </SyntaxHighlighter>{" "}
       <div className="navigation">
-        <Link to="/9">
+        <Link to="/conditionalrendering">
           <button>Previous</button>
         </Link>
         <Link to="/">
           <button>Home</button>
         </Link>
-        <Link to="/11">
+        <Link to="/useeffect">
           <button>Next</button>
         </Link>
       </div>

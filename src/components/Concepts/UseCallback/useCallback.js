@@ -91,13 +91,13 @@ function UseCallback() {
         {codeString}
       </SyntaxHighlighter>
       <div className="navigation">
-        <Link to="/11">
+        <Link to="/usereducer">
           <button>Previous</button>
         </Link>
         <Link to="/">
           <button>Home</button>
         </Link>
-        <Link to="/13">
+        <Link to="/customhook">
           <button>Next</button>
         </Link>
       </div>

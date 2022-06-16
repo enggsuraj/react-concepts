@@ -19,11 +19,7 @@ function ConceptContainer() {
           <p>Props & Events</p>
         </Link>
       </div>
-      <div className="item">
-        <Link to="/lifecyclemethods">
-          <p>LifeCycle Methods</p>
-        </Link>
-      </div>
+
       <div className="item">
         <Link to="/functionalcomponents">
           <p>Functional Components</p>
@@ -96,7 +92,7 @@ function ConceptContainer() {
           <p>Error Boundaries</p>
         </Link>
       </div>
-      <div className="disabled">
+      <div className="item">
         <Link to="/contextapi">
           <p>Context API</p>
         </Link>

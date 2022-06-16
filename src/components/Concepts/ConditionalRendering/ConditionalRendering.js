@@ -38,13 +38,13 @@ function ConditionalRendering() {
         {codeString}
       </SyntaxHighlighter>{" "}
       <div className="navigation">
-        <Link to="/8">
+        <Link to="/form">
           <button>Previous</button>
         </Link>
         <Link to="/">
           <button>Home</button>
         </Link>
-        <Link to="/10">
+        <Link to="/listandkeys">
           <button>Next</button>
         </Link>
       </div>

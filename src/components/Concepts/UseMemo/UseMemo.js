@@ -52,13 +52,13 @@ function UseMemo() {
         {codeString}
       </SyntaxHighlighter>
       <div>
-        <Link to="/10">
+        <Link to="/userefs">
           <button>Previous</button>
         </Link>
         <Link to="/">
           <button>Home</button>
         </Link>
-        <Link to="/12">
+        <Link to="/usereducer">
           <button>Next</button>
         </Link>
       </div>

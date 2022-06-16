@@ -63,7 +63,7 @@ export default class ClassComponent extends Component {
           <Link to="/">
             <button>Home</button>
           </Link>
-          <Link to="/2">
+          <Link to="/thisstate">
             <button>Next</button>
           </Link>
         </div>

@@ -71,13 +71,13 @@ function UseEffect() {
       </SyntaxHighlighter>
 
       <div class="navigation">
-        <Link to="/10">
+        <Link to="/listandkeys">
           <button>Previous</button>
         </Link>
         <Link to="/">
           <button>Home</button>
         </Link>
-        <Link to="/12">
+        <Link to="/userefs">
           <button>Next</button>
         </Link>
       </div>

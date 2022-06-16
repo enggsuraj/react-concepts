@@ -79,13 +79,13 @@ export default class PropsAndEvents extends Component {
             {codeString}
           </SyntaxHighlighter>{" "}
           <div className="navigation">
-            <Link to="/2">
+            <Link to="/thisstate">
               <button>Previous</button>
             </Link>
             <Link to="/">
               <button>Home</button>
             </Link>
-            <Link to="/4">
+            <Link to="/functionalcomponents">
               <button>Next</button>
             </Link>
           </div>

@@ -23,6 +23,7 @@ import CustomHook from "./components/Concepts/CustomHook/CustomHook";
 import RouterExample from "./components/Concepts/RouterExample/RouterExample";
 import Portals from "./components/Concepts/Portals/Portals";
 import ErrorBoundaries from "./components/Concepts/ErrorBoundaries/ErrorBoundaries";
+import ContextAPI from "./components/Concepts/ContextAPI/ContextAPI";
 
 function App() {
   return (
@@ -41,9 +42,9 @@ function App() {
           <Route path="/propsandevents">
             <PropsAndEvents />
           </Route>
-          <Route path="/lifecyclemethods">
+          {/* <Route path="/lifecyclemethods">
             <LifeCycleMethods />
-          </Route>
+          </Route> */}
           <Route path="/functionalcomponents">
             <FunctionalComponent />
           </Route>
@@ -86,6 +87,9 @@ function App() {
           </Route>
           <Route path="/errorboundaries">
             <ErrorBoundaries />
+          </Route>
+          <Route path="/contextapi">
+            <ContextAPI />
           </Route>
 
           {/* <Route path="/12">

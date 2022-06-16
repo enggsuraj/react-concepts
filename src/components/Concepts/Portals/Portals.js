@@ -41,11 +41,14 @@ function Portals() {
         Portals provide a first-class way to render children into a DOM node
         that exists outside the DOM hierarchy of the parent component.
       </p>
-      <div>
+      <div className="navigation">
+        <Link to="/router">
+          <button>Previous</button>
+        </Link>
         <Link to="/">
           <button>Home</button>
         </Link>
-        <Link to="/2">
+        <Link to="/errorboundaries">
           <button>Next</button>
         </Link>
       </div>

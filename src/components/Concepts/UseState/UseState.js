@@ -57,13 +57,13 @@ function UseState() {
         {codeString}
       </SyntaxHighlighter>{" "}
       <div className="navigation">
-        <Link to="/5">
+        <Link to="/functionalcomponents">
           <button>Previous</button>
         </Link>
         <Link to="/">
           <button>Home</button>
         </Link>
-        <Link to="/7">
+        <Link to="/form">
           <button>Next</button>
         </Link>
       </div>

@@ -28,13 +28,13 @@ function FunctionalComponent() {
         {codeString}
       </SyntaxHighlighter>{" "}
       <div>
-        <Link to="/4">
+        <Link to="/propsandevents">
           <button>Previous</button>
         </Link>
         <Link to="/">
           <button>Home</button>
         </Link>
-        <Link to="/6">
+        <Link to="/usestate">
           <button>Next</button>
         </Link>
       </div>

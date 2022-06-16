@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { tomorrowNightEighties } from "react-syntax-highlighter/dist/esm/styles/hljs";
@@ -50,6 +51,17 @@ function ErrorBoundaries() {
         catch errors during rendering, in lifecycle methods, and in constructors
         of the whole tree below them.
       </p>
+      <div className="navigation">
+        <Link to="/portals">
+          <button>Previous</button>
+        </Link>
+        <Link to="/">
+          <button>Home</button>
+        </Link>
+        <Link to="/contextapi">
+          <button>Next</button>
+        </Link>
+      </div>
     </div>
   );
 }

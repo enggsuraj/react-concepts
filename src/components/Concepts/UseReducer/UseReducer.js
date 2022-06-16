@@ -88,13 +88,13 @@ function UseReducer() {
       </SyntaxHighlighter>
 
       <div>
-        <Link to="/10">
+        <Link to="/usememo">
           <button>Previous</button>
         </Link>
         <Link to="/">
           <button>Home</button>
         </Link>
-        <Link to="/12">
+        <Link to="/usecallback">
           <button>Next</button>
         </Link>
       </div>
