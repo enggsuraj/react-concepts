@@ -11,11 +11,25 @@ import { tomorrowNightBright } from "react-syntax-highlighter/dist/esm/styles/hl
 import { tomorrowNightEighties } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 function UseMemo() {
-  const codeString = `const isEven = useMemo(() => {
-    let i = 0;
-    while (i < 2000000000) i++;
-    return counterOne % 2 === 0;
-  }, [counterOne]);`;
+  const codeString = `import "./styles.css";
+  import React, { useMemo, useState, useRef, useEffect } from "react";
+  
+  const expensiveCal = () => {
+    let num = 0;
+    for (let i = 0; i < 10000; i++) {
+      num = num + i;
+    }
+    return num;
+  };
+  
+  export default function App() {
+    const result = useMemo(() => {
+      return expensiveCal();
+    }, []);
+  
+    return <>{result}</>;
+  }
+  `;
 
   const [counterOne, setCounterOne] = useState(0);
   const [counterTwo, setCounterTwo] = useState(0);
