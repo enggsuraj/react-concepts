@@ -97,9 +97,17 @@ function ConceptContainer() {
           <p>Context API</p>
         </Link>
       </div>
-      <div className="disabled">
-        <p>Redux</p>
+      <div className="item">
+        <Link to="/redux">
+          <p>Redux</p>
+        </Link>
       </div>
+      <div className="item">
+        <Link to="/lifecyclemethods">
+          <p>LifeCycle Methods</p>
+        </Link>
+      </div>
+
       <div className="disabled">
         <p>JEST Testing</p>
       </div>
