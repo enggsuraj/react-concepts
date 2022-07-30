@@ -8,8 +8,8 @@ import ColorState from "./ColorState";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { tomorrowNightEighties } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
-const codeString = `import React, { createContext } from "react";
-const UserContext = createContext();`;
+const codeString = `import { createContext } from "react";
+export const ColorContext = createContext();`;
 
 const codeString_2 = `import React from "react";
 import { ColorContext } from "./ColorContext";
@@ -47,6 +47,35 @@ function ComA() {
 }
 
 export default ComA;`;
+
+const codeString_4 = `import React, { useContext } from "react";
+import ComC from "./ComC";
+import { ColorContext } from "./ColorContext";
+
+function ComB() {
+  const c = useContext(ColorContext);
+
+  return (
+    <div style={{ backgroundColor: c.color.green }}>
+      <p>{c.name} in ComB</p>
+      <ComC />
+    </div>
+  );
+}
+
+export default ComB;`;
+
+const codeString_5 = `import React, { useContext } from "react";
+import { ColorContext } from "./ColorContext";
+
+function ComC() {
+  const c = useContext(ColorContext);
+
+  return <div style={{ backgroundColor: c.color.blue }}>This is ComC</div>;
+}
+
+export default ComC;
+`;
 
 function ContextAPI() {
   return (
@@ -90,6 +119,22 @@ function ContextAPI() {
         style={tomorrowNightEighties}
       >
         {codeString_3}
+      </SyntaxHighlighter>
+
+      <SyntaxHighlighter
+        class="codesyntax"
+        language="javascript"
+        style={tomorrowNightEighties}
+      >
+        {codeString_4}
+      </SyntaxHighlighter>
+
+      <SyntaxHighlighter
+        class="codesyntax"
+        language="javascript"
+        style={tomorrowNightEighties}
+      >
+        {codeString_5}
       </SyntaxHighlighter>
 
       <ColorState>

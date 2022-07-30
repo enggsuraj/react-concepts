@@ -107,6 +107,11 @@ function ConceptContainer() {
           <p>LifeCycle Methods</p>
         </Link>
       </div>
+      <div className="item">
+        <Link to="/lazyloading">
+          <p>Lazy Loading</p>
+        </Link>
+      </div>
 
       <div className="disabled">
         <p>JEST Testing</p>
